@@ -1,0 +1,131 @@
+:root {
+  --primary-light: #ccd3d9;
+  --teal-color: #4fd1c5;
+  --cyan-color: #06b6d4;
+  --purple-color: #b794f4;
+  --pink-color: #f687b3;
+  --blue-color: #63b3ed;
+  --orange-color: #f6ad55;
+  --gray-color: #cbd5e0;
+  --light-gray-color: #f5f5f5;
+  --gray-300: #f2f2f2;
+  --border-collapse: #d9d9d9;
+  --border-light: #f0f0f0;
+  --black-40-color: rgb(0 0 0 / 40%);
+  --parrot-color: #52c41a;
+  --text-color: rgba(0, 0, 0, 0.88);
+  --modal-border: rgba(5, 5, 5, 0.06);
+  --blue-tag: #0958d9;
+  --placeholder: rgba(0, 0, 0, 0.25);
+
+  // Bootstrap variables
+  --bs-primary: rgb(42, 82, 152);
+  --bs-primary-bg-subtle: rgb(230, 230, 255);
+  --bs-primary-border-subtle: #ccd3d9;
+  --bs-secondary: #cecece;
+  --bs-success: rgb(16, 185, 129);
+  --bs-info: rgb(6, 182, 212);
+  --bs-warning: rgb(245, 158, 11);
+  --bs-danger: #ef4444;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-link-color-rgb: 0, 0, 112;
+  --bs-secondary-color: rgba(33, 37, 41, 0.5);
+  --bs-border-color: #d9d9d9;
+
+  --bs-primary-rgb: 42, 82, 152;
+  --bs-secondary-rgb: 206, 206, 206;
+  --bs-success-rgb: 16, 185, 129;
+  --bs-info-rgb: 6, 182, 212;
+  --bs-warning-rgb: 245, 158, 11;
+  --bs-danger-rgb: 239, 68, 68;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-primary-light-rgb: 230, 230, 255;
+
+  --bs-font-sans-serif: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body.dark-theme {
+  --primary-light: #19192c;
+  --bs-primary-bg-subtle: #19192c;
+  --bs-primary-border-subtle: #19192c;
+  --bs-body-bg: #141414;
+  --light-gray-color: #1d1d1d;
+  // --bs-primary: #6267ff;
+  --bs-primary-rgb: 22, 104, 220;
+  --bs-link-color-rgb: 98, 103, 255;
+  --bs-heading-color: #fff;
+  --gray-300: #202020;
+  --bs-secondary-color: rgba(222, 226, 230, 0.5);
+  --border-collapse: #424242;
+  --border-light: #303030;
+  --black-40-color: rgb(255 255 255 / 40%);
+  --text-color: rgba(255, 255, 255, 0.85);
+  --modal-border: rgba(253, 253, 253, 0.12);
+  --blue-tag: #3c89e8;
+  --bs-border-color: #424242;
+  --placeholder: rgba(255, 255, 255, 0.25);
+
+  // --bs-primary-rgb: 98, 103, 255;
+  --bs-secondary-rgb: 52, 58, 64;
+
+  --gray-12: rgba(253, 253, 253, 0.12);
+  --white-25: rgba(255, 255, 255, 0.25);
+  --white-60: rgba(255, 255, 255, 0.6);
+
+  --dark-input-bg: #141414;
+  --dark-input-border: #424242;
+  --dark-input-color: rgba(255, 255, 255, 0.85);
+  --dark-input-placeholder: rgba(255, 255, 255, 0.25);
+
+  --dark-bg: #1f1f1f;
+  --dark-hover-bg: rgba(255, 255, 255, 0.08);
+
+  --dialog-background-color: #333;
+  --dialog-text-color: #fff;
+
+  --ck-color-base-background: rgba(255, 255, 255, 0.04);
+  --ck-color-toolbar-background: rgba(255, 255, 255, 0.04);
+  --ck-color-base-border: #424242;
+
+  .mct-phone-input {
+    .form-control {
+      background: var(--dark-input-bg);
+      border-color: var(--dark-input-border);
+      color: var(--dark-input-color);
+      &::placeholder {
+        color: var(--dark-input-placeholder);
+      }
+    }
+    .flag-dropdown {
+      // background-color: var(--dark-bg);
+      border-color: var(--dark-input-border);
+    }
+    .country-list {
+      background-color: var(--dark-bg);
+      .country {
+        &:hover,
+        &.highlight {
+          background-color: var(--dark-hover-bg);
+        }
+      }
+    }
+    .selected-flag {
+      &:hover,
+      &:focus {
+        background-color: var(--dark-hover-bg);
+      }
+    }
+    .flag-dropdown {
+      &.open {
+        // background: var(--dark-hover-bg);
+        .selected-flag {
+          // background: var(--dark-hover-bg);
+        }
+      }
+    }
+  }
+}

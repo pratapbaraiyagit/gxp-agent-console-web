@@ -1,0 +1,29 @@
+@media (max-width: 992px) {
+  body {
+    --bs-body-font-size: 14px;
+  }
+  html {
+    font-size: 75%;
+  }
+  .kiosk-content {
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 768.99px) {
+  body {
+    --bs-body-font-size: 12px;
+  }
+  html {
+    font-size: 65%;
+  }
+  .heading-h1 {
+    max-width: 85%;
+    &.max-w-80 {
+      max-width: 85%;
+    }
+  }
+  .align-center-page {
+    margin: 0;
+  }
+}

@@ -1,0 +1,90 @@
+.kiosk-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  .main-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .ant-card-body {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .video-panel {
+    flex: 1;
+    .video-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-color: #2d3748;
+      min-height: 50vh;
+    }
+    .video-controls {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      background-color: #1a1a1a;
+    }
+  }
+
+  .tab-card {
+     > .ant-card-body {
+      height: calc(100vh - 130px);
+      background-color: var(--light-gray-color);
+      overflow-y: auto;
+    }
+    .ant-form-item {
+      margin-bottom: 1rem;
+    }
+    .id-display-area {
+      height: 300px;
+    }
+    .ant-tabs-tab-active {
+      .ant-btn-icon {
+        color: var(--bs-secondary);
+      }
+    }
+  }
+
+  .absolute-btn {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+  }
+
+  .disabled-overlay {
+    background-color: rgb(107 107 107 / 35%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    border-radius: 8px;
+    cursor: not-allowed;
+  }
+}
+
+.lane-text {
+  background-color: rgb(0 0 0 / 50%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
+}
+
+.selfie-full-modal {
+  img {
+    height: 80vh;
+    width: auto;
+  }
+}
