@@ -88,7 +88,7 @@ A comprehensive React-based web application designed to serve as a centralized c
 
    ```bash
    git clone <repository-url>
-   cd gxp-agent-console-web-14-07-225
+   cd gxp-agent-console-web
    ```
 
 2. **Install dependencies**
